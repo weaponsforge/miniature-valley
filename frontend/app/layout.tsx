@@ -9,7 +9,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 const _solway = Solway({ subsets: ["latin"], weight: ["400"] })
 export const _amaticSc = Amatic_SC({ weight: ["400"] })
 
-const metadata: Metadata = {
+export const metadata: Metadata = {
   title: "Miniature Valley Crafts - Handmade DIY Miniature Building Supplies",
   description:
     "Discover handcrafted miniature building supplies from Miniature Valley Crafts. Create stunning medieval towns, fantasy weaponry, gunpla scenes, and intricate miniature worlds using accessible DIY materials.",
