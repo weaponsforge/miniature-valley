@@ -29,6 +29,7 @@ Official landing page of the Miniature Valley Crafts organization.
 | Variable | Description |
 | --- | --- |
 | NEXT_PUBLIC_SOCIALS_FACEBOOK | URL to your Facebook Page or Profile |
+| NEXT_PUBLIC_OPENGRAPH_IMG_URL | URL to the Opengraph image thumbnail |
 
 ## Usage
 
