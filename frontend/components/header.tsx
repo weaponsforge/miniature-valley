@@ -111,9 +111,12 @@ export function Header() {
                 className={`absolute bottom-0 left-0 right-0 h-0.5 bg-primary rounded-full transition-opacity duration-200 ${activeNav === "contact" ? "opacity-100" : "opacity-0"}`}
               ></span>
             </Link>
-            <button className="px-6 py-2 bg-primary text-primary-foreground rounded-full hover:opacity-90 transition-opacity">
+            <Link
+              href={process.env.NEXT_PUBLIC_SOCIALS_FACEBOOK || ""}
+              className="px-6 py-2 bg-primary text-primary-foreground rounded-full hover:opacity-90 transition-opacity"
+            >
               Shop Now
-            </button>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}

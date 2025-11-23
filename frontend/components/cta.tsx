@@ -1,5 +1,7 @@
 "use client"
 
+import Link from "next/link"
+
 export function CTA() {
   return (
     <section id="contact" className="py-20 md:py-32 px-4">
@@ -21,9 +23,12 @@ export function CTA() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button className="px-8 py-4 bg-primary-foreground text-primary rounded-full font-semibold hover:shadow-lg transition-shadow">
+          <Link
+            href={process.env.NEXT_PUBLIC_SOCIALS_FACEBOOK || ""}
+            className="px-8 py-4 bg-primary-foreground text-primary rounded-full font-semibold hover:shadow-lg transition-shadow"
+          >
             Shop Now
-          </button>
+          </Link>
           <button className="px-8 py-4 border-2 border-primary-foreground text-primary-foreground rounded-full font-semibold hover:bg-white/10 transition-colors">
             Get Inspired
           </button>

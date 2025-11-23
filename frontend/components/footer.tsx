@@ -13,7 +13,7 @@ const products = [
     url: "#"
   },
   {
-    label: "Weapoon Kit",
+    label: "Weapon Kit",
     url: "#"
   },
 ]
@@ -36,7 +36,7 @@ const resources = [
 const connect = [
   {
     icon: Facebook,
-    url: "#"
+    url: process.env.NEXT_PUBLIC_SOCIALS_FACEBOOK || "#"
   },
   {
     icon: Youtube,
@@ -76,10 +76,10 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-primary-foreground mb-4">Resources</h4>
             <ul className="space-y-2 text-foreground-foreground/80">
-              {resources.map((resoure, id) => (
+              {resources.map((resource, id) => (
                 <li key={id}>
                   <Link href="#" className="text-white hover:text-primary hover:underline transition-colors">
-                    {resoure.label}
+                    {resource.label}
                   </Link>
                 </li>
               ))}
@@ -92,7 +92,7 @@ export function Footer() {
               {connect.map((item, id) => (
                 <Link
                   key={id}
-                  href="#"
+                  href={item.url}
                   className="p-2 bg-primary-foreground/10 rounded-lg hover:bg-primary-foreground/20 transition-colors"
                 >
                   <item.icon className="w-5 h-5 text-primary-foreground" />
