@@ -24,6 +24,12 @@ Official landing page of the Miniature Valley Crafts organization.
    npm install
    ```
 
+3. Create a `.env.local` file from the `.env.example` file. Replace the values of the environment variables with your own values.
+
+| Variable | Description |
+| --- | --- |
+| NEXT_PUBLIC_SOCIALS_FACEBOOK | URL to your Facebook Page or Profile |
+
 ## Usage
 
 1. Run the app for local development.<br>
