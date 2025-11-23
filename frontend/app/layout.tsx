@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: "Building your dream WORLD one brick at a time",
     images: [
       {
-        url: '/og-image.png',
+        url: process.env.NEXT_PUBLIC_OPENGRAPH_IMG_URL || "",
         width: 1200,
         height: 630,
         alt: 'Miniature Valley Crafts',
